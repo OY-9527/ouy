@@ -1,0 +1,7 @@
+{
+    "programmer": "AVR ISP",
+    "board": "arduino:avr:mega",
+    "port": "COM9",
+    "sketch": "steering.ino",
+    "configuration": "cpu=atmega2560"
+}

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "D:\\software\\Arduino\\tools\\**",
+                "D:\\software\\Arduino\\hardware\\arduino\\avr\\**",
+                "R:\\Arduino\\arduino-1.8.9\\hardware\\arduino\\avr\\**",
+                "R:\\Arduino\\arduino-1.8.9\\tools\\**"
+            ],
+            "forcedInclude": [
+                "D:\\software\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h",
+                "R:\\Arduino\\arduino-1.8.9\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

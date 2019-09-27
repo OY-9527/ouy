@@ -1,0 +1,6 @@
+{
+    "programmer": "AVR ISP",
+    "board": "arduino:avr:uno",
+    "port": "COM5",
+    "sketch": "color_sensor\\color_sensor.ino"
+}

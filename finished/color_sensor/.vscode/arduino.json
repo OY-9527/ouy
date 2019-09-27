@@ -1,0 +1,7 @@
+{
+    "port": "COM5",
+    "programmer": "AVR ISP",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560",
+    "sketch": "color_sensor.ino"
+}
