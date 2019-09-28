@@ -3,5 +3,5 @@
     "configuration": "cpu=atmega2560",
     "programmer": "AVR ISP",
     "sketch": "test1.ino",
-    "port": "COM9"
+    "port": "COM5"
 }
