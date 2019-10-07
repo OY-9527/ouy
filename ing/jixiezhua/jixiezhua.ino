@@ -4,7 +4,7 @@
 Servo bihe1;                                          //机械爪舵机对象1
 Servo bihe2;                                          //机械爪舵机对象2
 int arm1_status, arm2_status;                         //机械爪角度输出值
-int last_arm1_status = 50, last_arm2_status = 130;    //机械爪角度输出旧值
+int last_arm1_status = 0, last_arm2_status = 250;    //机械爪角度输出旧值
 int pos = 0;                                          //机械爪对象实时输出值
 float t, distance;                                    //超声波测距时间变量、实时距离变量
 int IN01 = 2, IN02 = 3, IN03 = 4, IN04 = 5;           //控制后面的两个电机
@@ -451,16 +451,23 @@ void loop()
     //数值增大，机械臂上摆，初始化角度25
     //数值增大，机械臂上摆，初始化角度160
     //数值减小，机械臂顺时针旋转，初始化角度100
-    jixiebi_init();//50, 100, 135, 25, 160, 100
-    delay(2000);
-    first(50, 190, 100, 70, 60, 100);
-    delay(2000);
+    //jixiebi_init();//50, 100, 135, 25, 160, 100
+    //delay(2000);
+    //first(50, 190, 100, 70, 60, 100);
+    //delay(2000);
     //infrared_tracking();
-    /*arm_init();
-    chaoshengbo();
-    bihe1.write(15);
-    bihe2.write(180);
-    if (distance > 0.05)
+    arm_init();
+    delay(5000);
+    bihe1.write(130);//1
+    bihe2.write(50);//1
+    /*delay(2000);
+    bihe1.write(150);//2
+    bihe2.write(50);//2
+    delay(2000);
+    bihe1.write(150);//3
+    bihe2.write(25);//3*/
+    delay(5000);
+    /*if (distance > 0.05)
     {
         // code
         xunji();
